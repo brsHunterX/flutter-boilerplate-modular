@@ -1,0 +1,45 @@
+name: flutter_boilerplate_modular_project
+description: Boilerplate that facilitates the creation of base projects that use flutter modules.
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ">=2.19.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_svg: ^1.1.6
+  dynamic_color: ^1.5.4
+  flutter_dotenv: ^5.0.2
+  cupertino_icons: ^1.0.2
+  shared_preferences: ^2.0.15
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+  flutter_launcher_icons: ^0.11.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - .env
+    - assets/images/
+
+flutter_icons:
+  image_path: "assets/launcher/icon.png"
+  remove_alpha_ios: true
+  android:
+    generate: true
+    adaptive_icon_foreground: "assets/launcher/foreground.png"
+    adaptive_icon_background: "assets/launcher/background.png"
+  ios:
+    generate: true
+    # image_path_ios: "assets/launcher/icon.png"
+  web:
+    generate: true
+    image_path: "assets/launcher/icon.png"
+  windows:
+    generate: true
+    image_path: "assets/launcher/icon.png"
