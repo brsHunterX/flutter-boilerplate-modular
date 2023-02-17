@@ -2,7 +2,7 @@
 
 Boilerplate that facilitates the creation of base projects that use flutter modules.
 
-![Badge](https://img.shields.io/github/stars/brsHunterX/flutter-boilerplate-modular-project)
+![Badge](https://img.shields.io/github/stars/brsHunterX/flutter-boilerplate-modular)
 ![Badge](https://img.shields.io/static/v1?label=version&message=0.1.0&color=orange)
 [![style: flutter_lints](https://img.shields.io/badge/style-flutter__lints-4BC0F5.svg)](https://pub.dev/packages/flutter_lints)
 
