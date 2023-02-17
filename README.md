@@ -12,13 +12,35 @@ Boilerplate that facilitates the creation of base projects that use flutter modu
 - Full Material Design 3.0
 - Dynamic Theme Colors Scheme
 
-## Development
+## Usage
 
-Clone the repository, then install the dependencies:
+Click in "Use this template" > "Create a new repository" to create a new project based on this
 
+![Step-1](https://user-images.githubusercontent.com/22013558/219527188-02429900-8963-4506-81d1-80339fbcfb06.png)
+
+
+Clone the newly created project and rename the project using the "rename" library
+    
+    flutter pub global activate rename
+    rename --appname project_name_must_follow_snake_case
+    
+
+Install the dependencies:
+
+    flutter clean
     flutter pub get
-    flutter pub run build_runner watch
+    
+    
+Configure your project's icons in assets > launcher following the image and naming pattern, then run:
 
+    flutter pub run flutter_launcher_icons
+    
+    
+Duplicate the .env.example > .env file and make the necessary settings.
+
+    cp ./.env.example .env
+    
+    
 Start the app:
 
     flutter run
