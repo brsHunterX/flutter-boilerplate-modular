@@ -1,16 +1,25 @@
-# flutter_boilerplate_modular_project
+<img src="https://user-images.githubusercontent.com/22013558/219514817-91ed5e33-2ba3-4373-8b9b-9d5407b47474.png" height="80" alt="Logo" />
 
-A new Flutter project.
+Boilerplate that facilitates the creation of base projects that use flutter modules.
 
-## Getting Started
+![Badge](https://img.shields.io/github/stars/brsHunterX/flutter-boilerplate-modular-project)
+![Badge](https://img.shields.io/static/v1?label=version&message=0.1.0&color=orange)
+[![style: flutter_lints](https://img.shields.io/badge/style-flutter__lints-4BC0F5.svg)](https://pub.dev/packages/flutter_lints)
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Modules Features
+- Full Material Design 3.0
+- Dynamic Theme Colors Scheme
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Development
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Clone the repository, then install the dependencies:
+
+    flutter pub get
+    flutter pub run build_runner watch
+
+Start the app:
+
+    flutter run
+
