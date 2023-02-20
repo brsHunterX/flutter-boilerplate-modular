@@ -1,4 +1,4 @@
-name: flutter_boilerplate_modular_project
+name: fbm
 description: Boilerplate that facilitates the creation of base projects that use flutter modules.
 publish_to: "none"
 version: 0.1.0
@@ -9,17 +9,25 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  dio: ^5.0.0
+  mobx: ^2.1.3
+  uuid: ^3.0.7
+  provider: ^6.0.4
   flutter_svg: ^1.1.6
   dynamic_color: ^1.5.4
   flutter_dotenv: ^5.0.2
+  flutter_mobx: ^2.0.6+5
   cupertino_icons: ^1.0.2
   shared_preferences: ^2.0.15
+  flutter_modular: ^5.0.3
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^2.0.0
   flutter_launcher_icons: ^0.11.0
+  build_runner: ^2.3.2
+  mobx_codegen: ^2.1.1
 
 flutter:
   uses-material-design: true

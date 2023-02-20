@@ -8,9 +8,9 @@ Boilerplate that facilitates the creation of base projects that use flutter modu
 
 ## Features
 
-- Modules Features
-- Full Material Design 3.0
-- Dynamic Theme Colors Scheme
+- Modular Features
+- Material Design 3.0
+- Dynamic Theme Colors
 
 ## Usage
 
@@ -39,7 +39,10 @@ Configure your project's icons in assets > launcher following the image and nami
 Duplicate the .env.example > .env file and make the necessary settings.
 
     cp ./.env.example .env
+
+This boilerplate has an example module that uses clean architecture and MobX to manage states. Run the code below to generate the .g files.
     
+    flutter pub run build_runner watch --delete-conflicting-outputs
     
 Start the app:
 
