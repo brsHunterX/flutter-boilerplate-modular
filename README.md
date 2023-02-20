@@ -22,8 +22,11 @@ Click in "Use this template" > "Create a new repository" to create a new project
 Clone the newly created project and rename the project using the "rename" library
     
     flutter pub global activate rename
-    rename --appname project_name_must_follow_snake_case
+    rename --appname your_project_name
     
+Manually rename the "name" key in the pubspec.yaml file:
+    
+    name: your_project_name
 
 Install the dependencies:
 
