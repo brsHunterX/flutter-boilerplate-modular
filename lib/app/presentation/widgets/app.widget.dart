@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:dynamic_color/dynamic_color.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:flutter_modular/flutter_modular.dart';
 
-import 'package:flutter_boilerplate_modular_project/app/routes.dart';
-import 'package:flutter_boilerplate_modular_project/shared/themes/custom_theme_dark.dart';
-import 'package:flutter_boilerplate_modular_project/shared/themes/custom_theme_light.dart';
+import 'package:fbm/shared/themes/dark.theme.dart';
+import 'package:fbm/shared/themes/light.theme.dart';
 
 class App extends StatefulWidget {
   const App({super.key});
@@ -29,15 +29,13 @@ class _AppState extends State<App> {
       colorScheme: darkDynamic ?? CustomThemeDark.theme.colorScheme
     );
 
-    return MaterialApp(
-      theme: lightTheme,
-      darkTheme: darkTheme,
+    return MaterialApp.router(
       title: dotenv.get('APP_NAME'),
       debugShowCheckedModeBanner: isLocal,
-      initialRoute: AppRoutes.APP_SPLASH,
-      routes: {
-        ...AppRoutes.routes,
-      },
+      routerDelegate: Modular.routerDelegate,
+      routeInformationParser: Modular.routeInformationParser,
+      theme: lightTheme,
+      darkTheme: darkTheme,
     );
   }
 
