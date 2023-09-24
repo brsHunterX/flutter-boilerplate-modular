@@ -7,6 +7,8 @@ import 'package:fbm/app/presentation/widgets/app.widget.dart';
 
 void main() async {
   await dotenv.load(fileName: '.env');
-
+  
+  WidgetsFlutterBinding.ensureInitialized();
+  
   runApp(ModularApp(module: AppModule(), child: const App()));
 }
